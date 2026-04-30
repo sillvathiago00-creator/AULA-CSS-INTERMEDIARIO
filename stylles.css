@@ -1,0 +1,119 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #5D5D7D;
+    text-align: center;
+}
+p {
+    margin: 15px 40px;
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+}
+.container-esquerdo {
+    display: inline-block;
+    width: 60%;
+    margin: 20% 130px 200px 10px;
+    
+}
+
+.container-direito {
+    display: inline-block; 
+    background-color: rgba(93,93,125,0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    font-weight: 800;
+}
+header {
+    display: flex;
+    gap: 20px;
+    margin: 15px 40px;
+    cursor: pointer;
+    color: #5D5D7D;
+}
+img {
+    position: relative;
+    top: 15%;
+    right: 130px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #5D5D7D;
+cursor: pointer;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+@media screen and (max-width: 900px) {
+    
+    
+.container-esquerdo {
+    width: 100%;
+    display: inline-block;
+    width: 100%;
+    height: 50%
+    }
+ .container-direito {
+    /* 1. Torna a largura fluida */
+    width: 100%;           /* Ocupa 100% da largura disponível em qualquer tela */
+    max-width: 1200px;    /* Mas não deixa ficar largo demais em monitores ultra-wide */
+    
+    /* 2. Remove o 'absolute' para ele não flutuar sobre os outros */
+    position: relative; 
+    
+    /* 3. Centraliza automaticamente */
+    margin: 20px auto;    
+    
+    /* 4. Garante que o conteúdo interno (texto/imagens) não escape */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 52px;
+    margin: 0 ;
+    width: auto;
+    text-align: center;
+}
+p {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 50px 80px;
+    width: auto;
+    text-align: center;
+}
+img {
+        width: 70%;      /* A largura será 80% da tela */
+        height: auto;    /* Mantém a proporção original para não achatar */
+        display: block;  /* Necessário para centralizar com margin auto */
+        margin-left: 180px; /* Move para a direita */
+        margin-top: 50px;   /* Move para baixo */
+}
+header {
+    display: none;
+}
+button {
+    display: block;   /* Faz o botão ocupar a linha toda para permitir o auto */
+    margin: 10px auto; /* 10px em cima/baixo e centraliza nas laterais */
+    }
+}
